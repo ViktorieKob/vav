@@ -65,8 +65,8 @@ body, html {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 2rem;
-  font-size: 1.9rem; /* větší text */
+  gap: 1.7rem;
+  font-size: 1.5rem; /* větší text */
 }
 
 /*
