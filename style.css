@@ -389,7 +389,7 @@ background: linear-gradient(to right, #fad9fd, #ffb6ff); /* pastel žlutá */
   display: inline-block;
   margin-top: 1rem;
   padding: 0.6rem 1.2rem;
-  background: #ffccdd;
+  background: #f79ff7;
   color: #333;
   text-decoration: none;
   border-radius: 20px;
@@ -398,7 +398,7 @@ background: linear-gradient(to right, #fad9fd, #ffb6ff); /* pastel žlutá */
 }
 
 .button-link:hover {
-  background: #ffc0cb;
+  background: #ffffff;
 }
 /* ---------- GALERIE ---------- */
 .galerie-page {
