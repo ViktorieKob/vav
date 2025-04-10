@@ -282,7 +282,7 @@ footer {
 
 /* Barevné styly jednotlivých bublin podle vlastní volby */
 .bublina-a {
-background: linear-gradient(to right, #ffcccc, #ffe6cc, #ffffcc); /* pastel růžová */
+background: linear-gradient(to right, #bdfcf6, #b3f8ed, #d9fcfd); /* pastel růžová */
 }
 
 .bublina-b {
@@ -294,18 +294,19 @@ background: linear-gradient(to right, #fce1f2, #f9d5ec); /* pastel fialová */
 }
 
 .bublina-d {
-  background:#ffffff /* bílá*/
+  background:linear-gradient(to right, #ccffff, #cce5ff, #e6ccff);
   }
   
 
 .bublina-e {
-background: linear-gradient(to right, #fff2cc, #ffe7a1); /* pastel žlutá */
+background: linear-gradient(to right, #fad9fd, #ffb6ff); /* pastel žlutá */
 }
 
 
 /* mobil*/
 /* ---------- RESPONSIVITA PRO MOBILNÍ ZAŘÍZENÍ ---------- */
 
+/* ---------- RESPONSIVITA PRO MOBILNÍ ZAŘÍZENÍ ---------- */
 @media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -343,7 +344,6 @@ background: linear-gradient(to right, #fff2cc, #ffe7a1); /* pastel žlutá */
     max-width: 500px;
     height: auto;
     padding: 1.5rem;
-    min-height: auto;
   }
 
   .bubble-side .image img {
@@ -352,26 +352,12 @@ background: linear-gradient(to right, #fff2cc, #ffe7a1); /* pastel žlutá */
     border-radius: 20px;
   }
 
-  /* Default: nejdřív text, pak obrázek */
-  .bubble-side .text {
-    order: 1;
-  }
-
+  .bubble-side .text,
   .bubble-side .image {
-    order: 2;
+    min-height: auto;
   }
 
-  /* Pokud je reverse-mobile, tak naopak */
-  .bubble-side.reverse-mobile .text {
-    order: 2;
-  }
-
-  .bubble-side.reverse-mobile .image {
-    order: 1;
-  }
-
-  .text h2,
-  .text h3 {
+  .text h2, .text h3 {
     font-size: 1.3rem;
   }
 
@@ -382,6 +368,10 @@ background: linear-gradient(to right, #fff2cc, #ffe7a1); /* pastel žlutá */
   .kontakt {
     padding: 2rem 1rem;
   }
-}
 
+  /* Otočení pořadí jen pro vybrané bubliny na mobilu */
+  .bubble-side.reverse-mobile {
+    flex-direction: column-reverse;
+  }
+}
 
