@@ -383,3 +383,68 @@ background: linear-gradient(to right, #fad9fd, #ffb6ff); /* pastel žlutá */
   }
 }
 
+
+/* GALERIE !!*/
+.button-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #ffccdd;
+  color: #333;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.button-link:hover {
+  background: #ffc0cb;
+}
+/* ---------- GALERIE ---------- */
+.galerie-page {
+  padding: 2rem 1rem;
+}
+.galerie-blok {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.galerie-nadpis {
+  padding: 1rem;
+  border-radius: 15px;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Obrázky */
+.galerie-obrazky {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.galerie-obrazky img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+/* Barevné gradienty pro galerie */
+.bublina-a {
+  background: linear-gradient(to right, #ffcccc, #ffe6cc, #ffffcc);
+}
+
+.bublina-b {
+  background: linear-gradient(to right, #ccffff, #cce5ff, #e6ccff);
+}
+
+.bublina-c {
+  background: linear-gradient(to right, #fce1f2, #f9d5ec);
+}
+
