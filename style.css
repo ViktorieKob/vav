@@ -420,6 +420,8 @@ background: linear-gradient(to right, #fad9fd, #ffb6ff); /* pastel žlutá */
 }
 
 /* Obrázky */
+
+/*
 .galerie-obrazky {
   display: flex;
   flex-wrap: wrap;
@@ -433,6 +435,24 @@ background: linear-gradient(to right, #fad9fd, #ffb6ff); /* pastel žlutá */
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+*/
+.galerie-obrazky {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.galerie-obrazky img {
+  width: 100%;
+  max-width: 300px; /* můžeš změnit podle potřeby */
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  object-fit: contain;
+}
+
 
 
 /* Barevné gradienty pro galerie */
