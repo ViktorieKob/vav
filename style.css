@@ -306,72 +306,45 @@ background: linear-gradient(to right, #fff2cc, #ffe7a1); /* pastel žlutá */
 /* mobil*/
 /* ---------- RESPONSIVITA PRO MOBILNÍ ZAŘÍZENÍ ---------- */
 /* ---------- RESPONSIVITA PRO MOBILNÍ ZAŘÍZENÍ ---------- */
-/* ---------- RESPONSIVITA PRO MOBIL ---------- */
 @media screen and (max-width: 768px) {
-  /* NAVBAR */
-  .navbar {
+  .bubble-side {
     flex-direction: column;
     align-items: center;
-    padding: 5px 0;
-    background-color: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-
-  .logo img {
-    width: 80px;
-    margin-bottom: 5px;
-  }
-
-  .nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 6px;
-    font-size: 14px;
-  }
-
-  .nav-links a {
-    padding: 4px 10px;
-    font-size: 14px;
-    border-radius: 20px;
-  }
-
-  /* BUBBLES */
-  .bubble-side {
-    flex-direction: column !important;
-    align-items: center;
     text-align: center;
-    margin-top: 30px;
+    margin: 2rem 0;
   }
 
   .bubble-side .image {
     order: 1;
-    width: 100%;
-    max-width: 90%;
+    width: 90%;
+    max-width: 500px;
+    margin-bottom: 1rem;
   }
 
   .bubble-side .text {
     order: 2;
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .bubble-side .image img {
     width: 100%;
-    max-width: 90%;
-    padding: 10px;
+    height: auto;
+    display: block;
+    border-radius: 20px;
   }
 
-  .bubble-side .text p,
-  .bubble-side .text h3 {
-    font-size: 16px;
+  .navbar {
+    font-size: 13px;
+    flex-wrap: wrap;
+    gap: 5px;
   }
 
-  /* SEKCÍ TITULKY */
-  .section-title {
-    font-size: 24px;
-    margin-bottom: 15px;
+  .nav-links a {
+    font-size: 13px;
+    padding: 5px 10px;
   }
 
-  /* Úvodní sekce */
   .hero {
     padding-top: 100px;
   }
