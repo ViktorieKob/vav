@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: #fdfdfd;
+  color: #333;
+}
+/*
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 2rem 4rem;
+  position: relative; 
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: transparent;
+  gap: 3rem;
+}
+*/
+
+.navbar {
+  background: linear-gradient(
+    to right,
+    #ffcccc,
+    #ffe6cc,
+    #ffffcc,
+    #e6ffcc,
+    #ccffff,
+    #cce5ff,
+    #e6ccff);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 4rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  /*background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);*/
+  gap: 3rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 150px; /* ← Tady můžeš změnit výšku např. na 100px */
+}
+
+.logo img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  font-size: 1.9rem; /* větší text */
+}
+
+/*
+.nav-links li a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  padding: 0.4rem 1rem;
+  transition: all 0.3s;
+  border-radius: 10px;
+}
+
+.nav-links li a:hover {
+  background-color: #ffe3dc;
+  color: #ff6f61;
+}
+*/
+
+/* test*/
+
+
+
+.nav-links li a {
+  text-decoration: none;
+  color:  #2f0433;
+  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+  transition: all 0.3s;
+  border-radius: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.15); /* poloprůhledné, jemný kontrast */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links li a:hover {
+  background-color: rgba(0, 0, 0, 0.3); /* trochu tmavší při najetí */
+  color:  #2f0433;
+}
+
+
+
+.hero {
+  padding: 10rem 2rem 4rem 2rem;
+  text-align: center;
+
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #2f0433;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.section {
+  width: 100%;
+  padding: 5rem 2rem 3rem;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #2f0433;
+  text-align: center;
+}
+/*
+.bubble-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 2rem auto;
+  height: 400px;
+}
+
+.bubble-side .text {
+  flex: 1;
+  background: white;
+  padding: 2rem;
+  border-radius: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+}
+*/
+/*
+.bubble-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 2rem auto;
+  height: 400px;
+}
+
+
+
+
+.bubble-side .text, .bubble-side .image {
+  flex: 1;
+  padding: 2rem;
+  border-radius: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+}
+*/
+
+.bubble-side {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 2rem auto;
+  height: 400px;
+  box-sizing: border-box;
+}
+
+.bubble-side .text,
+.bubble-side .image {
+  flex: 1 1 50%;
+  width: 50%;
+  padding: 2rem;
+  border-radius: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+/*
+.bubble-side .image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+*/
+.bubble-side .image {
+  padding: 0;
+}
+
+.bubble-side .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.text h2, .text h3 {
+  margin-bottom: 2rem;
+  color: #2f0433;
+  font-size: 1.6rem; /* ← přidej nebo uprav tento řádek */
+
+}
+
+.text p {
+  color: #444;
+  line-height: 2;
+  font-size: 1.1rem; /* přidej pro větší nadpisy */
+
+}
+
+
+
+
+.kontakt {
+  text-align: center;
+  color: #000000; 
+  background:linear-gradient(to right, #ccffff, #cce5ff, #e6ccff);
+  padding: 4rem 2rem;
+  border-radius: 0px;
+  width: 100%;
+  max-width: 100%;
+  margin: 4rem auto 2rem;
+}
+
+
+.kontakt a {
+  color: #02343d;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+
+/* mobil*/
+/* ---------- RESPONSIVITA PRO MOBILNÍ ZAŘÍZENÍ ---------- */
+@media screen and (max-width: 768px) {
+  .bubble-side {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bubble-side .text, .bubble-side .image {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .bubble-side img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .bubble-side .text p,
+  .bubble-side .text h3 {
+    font-size: 16px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .navbar {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  .logo img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 5px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-links a {
+    padding: 6px 10px;
+    border-radius: 20px;
+  }
+}
+
+
+
+
+
+
+
+/* Consistent height for text and image containers */
+.bubble-side .text, .bubble-side .image {
+  min-height: 100%;
+  height: 100%;
+}
+
+
+
+/* Barevné styly jednotlivých bublin podle vlastní volby */
+.bublina-a {
+background: linear-gradient(to right, #ffcccc, #ffe6cc, #ffffcc); /* pastel růžová */
+}
+
+.bublina-b {
+background: linear-gradient(to right, #ccffff, #cce5ff, #e6ccff); /* pastel modrá */
+}
+
+.bublina-c {
+background: linear-gradient(to right, #fce1f2, #f9d5ec); /* pastel fialová */
+}
+
+.bublina-c {
+  background:#ffffff /* bílá*/
+  }
+  
+
+.bublina-e {
+background: linear-gradient(to right, #fff2cc, #ffe7a1); /* pastel žlutá */
+}
