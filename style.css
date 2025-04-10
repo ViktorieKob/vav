@@ -293,7 +293,7 @@ background: linear-gradient(to right, #ccffff, #cce5ff, #e6ccff); /* pastel modr
 background: linear-gradient(to right, #fce1f2, #f9d5ec); /* pastel fialová */
 }
 
-.bublina-c {
+.bublina-d {
   background:#ffffff /* bílá*/
   }
   
@@ -305,47 +305,83 @@ background: linear-gradient(to right, #fff2cc, #ffe7a1); /* pastel žlutá */
 
 /* mobil*/
 /* ---------- RESPONSIVITA PRO MOBILNÍ ZAŘÍZENÍ ---------- */
-/* ---------- RESPONSIVITA PRO MOBILNÍ ZAŘÍZENÍ ---------- */
+
 @media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    padding: 8px 16px;
+    white-space: nowrap;
+  }
+
+  .hero {
+    padding-top: 6rem;
+  }
+
   .bubble-side {
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin: 2rem 0;
+    height: auto;
   }
 
-  .bubble-side .image {
-    order: 1;
-    width: 90%;
-    max-width: 500px;
-    margin-bottom: 1rem;
-  }
-
+  .bubble-side .image,
   .bubble-side .text {
-    order: 2;
     width: 90%;
     max-width: 500px;
+    height: auto;
+    padding: 1.5rem;
+    min-height: auto;
   }
 
   .bubble-side .image img {
     width: 100%;
     height: auto;
-    display: block;
     border-radius: 20px;
   }
 
-  .navbar {
-    font-size: 13px;
-    flex-wrap: wrap;
-    gap: 5px;
+  /* Default: nejdřív text, pak obrázek */
+  .bubble-side .text {
+    order: 1;
   }
 
-  .nav-links a {
-    font-size: 13px;
-    padding: 5px 10px;
+  .bubble-side .image {
+    order: 2;
   }
 
-  .hero {
-    padding-top: 100px;
+  /* Pokud je reverse-mobile, tak naopak */
+  .bubble-side.reverse-mobile .text {
+    order: 2;
+  }
+
+  .bubble-side.reverse-mobile .image {
+    order: 1;
+  }
+
+  .text h2,
+  .text h3 {
+    font-size: 1.3rem;
+  }
+
+  .text p {
+    font-size: 1rem;
+  }
+
+  .kontakt {
+    padding: 2rem 1rem;
   }
 }
+
+
