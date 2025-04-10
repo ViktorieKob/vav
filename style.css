@@ -457,7 +457,7 @@ background: linear-gradient(to right, #fad9fd, #ffb6ff); /* pastel žlutá */
 
 /* Barevné gradienty pro galerie */
 .bublina-a {
-  background: linear-gradient(to right, #ffcccc, #ffe6cc, #ffffcc);
+  background: linear-gradient(to right, #fce1f2, #f9d5ec,#e6ccff);
 }
 
 .bublina-b {
@@ -466,5 +466,39 @@ background: linear-gradient(to right, #fad9fd, #ffb6ff); /* pastel žlutá */
 
 .bublina-c {
   background: linear-gradient(to right, #fce1f2, #f9d5ec);
+}
+
+/* test o nas*/
+
+/* Úpravy pro sekci "O nás" (vertikální styl) */
+.bubble-vert-side {
+  flex-direction: column !important;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto 6rem auto; /* větší mezera dolů */
+}
+
+.bubble-vert .text {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 2rem;
+  padding: 3rem;
+  border-radius: 25px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.bubble-vert .image {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 6rem; /* <<< TADY přidáš mezeru pod obrázek */
+
+}
+
+.bubble-vert .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
 }
 
