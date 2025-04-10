@@ -307,62 +307,83 @@ background: linear-gradient(to right, #fff2cc, #ffe7a1); /* pastel žlutá */
 /* ---------- RESPONSIVITA PRO MOBILNÍ ZAŘÍZENÍ ---------- */
 /* ---------- RESPONSIVITA PRO MOBILNÍ ZAŘÍZENÍ ---------- */
 /* ---------- RESPONSIVITA PRO MOBILNÍ ZAŘÍZENÍ ---------- */
-.navbar {
-  padding: 8px 12px;
-  flex-wrap: nowrap;
-  justify-content: center;
-  gap: 8px;
-  position: sticky;
-  top: 0;
-  background: linear-gradient(to right, #ffcccc, #ffe6cc, #ffffcc, #e6ffcc, #ccffff, #cce5ff, #e6ccff);
-  z-index: 999;
-}
+@media screen and (max-width: 768px) {
+  .bubble-side {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
 
-.nav-links {
-  gap: 6px;
-  flex-wrap: nowrap;
-  font-size: 14px;
-}
+  .bubble-side .text,
+  .bubble-side .image {
+    width: 100%;
+    max-width: 600px;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
 
-.nav-links a {
-  padding: 6px 10px;
-  font-size: 14px;
-}
+  .bubble-side img {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
 
-.logo img {
-  max-width: 80px;
-  height: auto;
-  margin-bottom: 5px;
-}
+  .bubble-side .text p,
+  .bubble-side .text h3 {
+    font-size: 16px;
+  }
 
-.bubble-side {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 1rem;
-  margin: 2rem 1rem;
-}
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
 
-.bubble-side .text, 
-.bubble-side .image {
-  width: 100%;
-  padding: 1rem;
-  margin: 0 auto;
-}
+  .navbar {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
 
-.bubble-side img {
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
-}
+  .logo img {
+    width: 80px;
+    height: auto;
+    margin: 0 auto 5px;
+    display: block;
+  }
 
-.section-title {
-  font-size: 22px;
-  margin: 20px 0;
-}
+  .nav-links {
+    display: flex;
+    gap: 5px;
+    font-size: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-footer {
-  font-size: 14px;
-  padding: 1rem;
-  text-align: center;
+  .nav-links a {
+    padding: 4px 10px;
+    border-radius: 20px;
+  }
+
+  .section.kontakt {
+    padding: 1.5rem 1rem;
+  }
+
+  .section.kontakt p {
+    font-size: 16px;
+  }
+
+  .section.kontakt h2 {
+    font-size: 22px;
+    margin-bottom: 1rem;
+  }
 }
