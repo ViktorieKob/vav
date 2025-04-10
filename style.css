@@ -108,19 +108,22 @@ body, html {
 
 
 .hero {
-  padding: 10rem 2rem 4rem 2rem;
-  text-align: center;
+  padding: 9rem 2rem 4rem 2rem;
 
+  text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .hero h1 {
   font-size: 2.8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   color: #2f0433;
 }
 
 .hero p {
   font-size: 1.2rem;
+  margin-bottom: 15rem;
   color: #555;
 }
 
