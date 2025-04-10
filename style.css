@@ -332,7 +332,7 @@ background: linear-gradient(to right, #fad9fd, #ffb6ff); /* pastel žlutá */
 }
 
   .nav-links a {
-    font-size: 14px;
+    font-size: 12px;
     padding: 8px 16px;
     white-space: nowrap;
   }
