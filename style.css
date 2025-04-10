@@ -311,6 +311,23 @@ background: linear-gradient(to right, #fad9fd, #ffb6ff); /* pastel žlutá */
 
 /* ---------- RESPONSIVITA PRO MOBILNÍ ZAŘÍZENÍ ---------- */
 @media screen and (max-width: 768px) {
+  .section {
+    padding-bottom: 0.5rem; /* nebo míň, podle potřeby */
+  }
+ 
+ 
+  section#uvod.section.bubble-vert {
+    padding-bottom: 0.1rem;
+    padding-top: 2rem;
+  }
+
+  .bubble-vert .image {
+    margin-bottom: 1rem !important; /* místo 6rem */
+  }
+
+  .bubble-vert-side {
+    margin-bottom: 0.1rem; /* pokud je potřeba ještě víc zkrátit */
+  }
   .navbar {
     flex-direction: column;
     align-items: center;
@@ -342,6 +359,12 @@ background: linear-gradient(to right, #fad9fd, #ffb6ff); /* pastel žlutá */
     padding-top: 6rem;
   }
 
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
   .bubble-side {
     flex-direction: column;
     align-items: center;
