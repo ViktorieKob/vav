@@ -306,6 +306,7 @@ background: linear-gradient(to right, #fff2cc, #ffe7a1); /* pastel žlutá */
 /* mobil*/
 /* ---------- RESPONSIVITA PRO MOBILNÍ ZAŘÍZENÍ ---------- */
 /* ---------- RESPONSIVITA PRO MOBILNÍ ZAŘÍZENÍ ---------- */
+/* ---------- RESPONSIVITA PRO MOBILNÍ ZAŘÍZENÍ ---------- */
 @media screen and (max-width: 768px) {
   .bubble-side {
     flex-direction: column;
@@ -343,7 +344,43 @@ background: linear-gradient(to right, #fff2cc, #ffe7a1); /* pastel žlutá */
 
   .navbar {
     position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
 
-  }  
+  .logo img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 5px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-links a {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+
+  .section.kontakt {
+    padding: 2rem 1rem;
+  }
+
+  .section.kontakt p {
+    font-size: 16px;
+    text-align: center;
+  }
 }
 
