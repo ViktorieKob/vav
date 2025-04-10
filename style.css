@@ -314,11 +314,19 @@ background: linear-gradient(to right, #fad9fd, #ffb6ff); /* pastel žlutá */
     padding: 1rem;
     gap: 1rem;
   }
-
+/*
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
   }
+*/
+
+.nav-links {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
 
   .nav-links a {
     font-size: 14px;
