@@ -332,9 +332,10 @@ background: linear-gradient(to right, #fad9fd, #ffb6ff); /* pastel žlutá */
 }
 
   .nav-links a {
-    font-size: 12px;
-    padding: 8px 16px;
+    font-size: 12px; /* menší písmo */
+    padding: 6px 12px; /* menší "bublinky" */
     white-space: nowrap;
+
   }
 
   .hero {
