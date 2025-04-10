@@ -328,7 +328,7 @@ background: linear-gradient(to right, #fad9fd, #ffb6ff); /* pastel žlutá */
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
 }
 
   .nav-links a {
