@@ -539,7 +539,7 @@ background: linear-gradient(to right, #fad9fd, #ffb6ff); /* pastel žlutá */
 
 /* Styl kalendáře */
 #calendar {
-  max-width: 800px;
+  max-width: 500px;
   margin: 2rem auto;
   background: white;
   padding: 1rem;
