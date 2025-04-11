@@ -566,3 +566,39 @@ background: linear-gradient(to right, #fad9fd, #ffb6ff); /* pastel žlutá */
 #reservation-form-section label {
   font-weight: bold;
 }
+
+
+/* uprava bussy free atd*/
+
+/* Legenda */
+.legend {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legend-color {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.busy-color {
+  background-color: #ff4d4d;
+}
+
+.free-color {
+  background-color: #57cc99;
+}
+
+.disabled-day .fc-daygrid-day-frame {
+  background-color: #eee !important;
+  color: #999 !important;
+}
