@@ -33,6 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
   calendar.render();
 });
 */
+
+/*
 document.addEventListener("DOMContentLoaded", function () {
     const calendarEl = document.getElementById("calendar");
     if (!calendarEl) {
@@ -77,5 +79,43 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   });
-  
-  
+  */
+  console.log('✅ Script JS načten');
+
+document.addEventListener("DOMContentLoaded", function () {
+  const calendarEl = document.getElementById("calendar");
+  if (!calendarEl) {
+    console.error("❌ Element #calendar nebyl nalezen!");
+    return;
+  }
+
+  fetch("events.json")
+    .then((response) => response.json())
+    .then((events) => {
+      const calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: "dayGridMonth",
+        selectable: true,
+        events: events,
+        selectAllow: function (info) {
+          const day = new Date(info.startStr).getDay();
+          return (day === 0 || day === 6); // pouze sobota nebo neděle
+        },
+        select: function (info) {
+          const formSection = document.getElementById("reservation-form-section");
+          const dateSpan = document.getElementById("selected-date");
+          if (formSection && dateSpan) {
+            formSection.classList.remove("hidden");
+            dateSpan.textContent = info.startStr;
+          }
+        },
+        eventClick: function (info) {
+          alert(`Tento termín je označen jako: ${info.event.title}`);
+        }
+      });
+
+      calendar.render();
+    })
+    .catch((error) => {
+      console.error("Chyba při načítání událostí:", error);
+    });
+});
