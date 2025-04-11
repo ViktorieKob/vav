@@ -118,7 +118,10 @@ document.addEventListener("DOMContentLoaded", function () {
             return (day === 6 || day === 0) && !busyDates.includes(info.startStr);
           },
           select: function (info) {
-            zobrazFormular(info.startStr);
+            // ✅ Oprava pro dotyková zařízení (mobil)
+            setTimeout(() => {
+              zobrazFormular(info.startStr);
+            }, 0);
           },
           datesSet: function () {
             setTimeout(() => {
@@ -150,4 +153,5 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error("❌ Chyba při načítání dat: ", error);
       });
   });
+  
   
