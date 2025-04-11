@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="cs">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   Dětské dobrodružné hry
-  </title>
-  <link href="style.css" rel="stylesheet"/>
-  <script defer="" src="script.js">
-  </script>
- </head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dětské dobrodružné hry</title>
+
+    <!-- Vlastní styl -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FullCalendar styl -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" />
+
+    <!-- FullCalendar skript -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+
+    <!-- Tvůj vlastní JS -->
+    <script defer src="script.js"></script>
+  </head>
+
+  
  <body>
   <nav class="navbar">
    <div class="logo">
@@ -139,6 +148,30 @@
       </div>
     </div>
   </section>
+
+
+
+<!-- Nová sekce: Kalendář dostupnosti -->
+<!-- SEKCE: Dostupnost víkendů -->
+<!-- SEKCE: Dostupnost víkendů -->
+<section id="rezervace" class="section">
+    <h2 class="section-title">Dostupnost víkendů</h2>
+    <div id="calendar"></div>
+  </section>
+  
+  <!-- SEKCE: Formulář pro rezervaci -->
+  <section id="reservation-form-section" class="section hidden">
+    <h3>Rezervace termínu: <span id="selected-date"></span></h3>
+    <form action="https://formspree.io/f/xvgkdjla" method="POST">
+      <input type="hidden" name="datum" id="date" />
+      <label for="name">Jméno:</label>
+      <input type="text" name="name" id="name" required />
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required />
+      <button type="submit">Odeslat žádost</button>
+    </form>
+  </section>
+  
   
   </main>
   <section class="section kontakt" id="kontakt">
@@ -149,7 +182,6 @@
       Napište nám na <a href="mailto:info@detskedobrodruzstvi.cz">info@detskedobrodruzstvi.cz</a>.
     </p>
   </section>
-  
   <footer>
    <p>
     © 2025 Dobrodružné hry pro děti. Všechna práva vyhrazena.
