@@ -1,43 +1,4 @@
-[
-    {
-      "title": "Volno",
-      "start": "2025-04-05",
-      "color": "#b6e2a1"
-    },
-    {
-      "title": "Obsazeno",
-      "start": "2025-04-06",
-      "color": "#f5a9a9"
-    },
-    {
-      "title": "Volno",
-      "start": "2025-04-12",
-      "color": "#b6e2a1"
-    },
-    {
-      "title": "Obsazeno",
-      "start": "2025-04-13",
-      "color": "#f5a9a9"
-    },
-    {
-      "title": "Volno",
-      "start": "2025-04-19",
-      "color": "#b6e2a1"
-    },
-    {
-      "title": "Volno",
-      "start": "2025-04-20",
-      "color": "#b6e2a1"
-    },
-    {
-      "title": "Obsazeno",
-      "start": "2025-04-26",
-      "color": "#f5a9a9"
-    },
-    {
-      "title": "Volno",
-      "start": "2025-04-27",
-      "color": "#b6e2a1"
-    }
-  ]
+{
+    "busy": ["2025-04-13"]
+  }
   

@@ -602,3 +602,44 @@ background: linear-gradient(to right, #fad9fd, #ffb6ff); /* pastel žlutá */
   background-color: #eee !important;
   color: #999 !important;
 }
+/*šedé víkendy*/
+/* Šedé pozadí pro všední dny */
+.fc-daygrid-day.nelze {
+  background-color: #f0f0f0;
+  pointer-events: none; /* Aby nešly kliknout */
+  color: #999;
+  cursor: not-allowed;
+}
+
+
+/* ====== KALENDÁŘ – BARVY DNŮ ====== */
+
+.fc-daygrid-day.obsazeno {
+  background-color: #f8d7da !important; /* červená – obsazeno */
+  color: #721c24;
+}
+
+.fc-daygrid-day.volno {
+  background-color: #d4edda !important; /* zelená – volno */
+  color: #155724;
+}
+
+.fc-daygrid-day.nelze {
+  background-color: #f0f0f0 !important; /* šedá – všední dny */
+  color: #666;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+
+
+
+
+.fc-day-today {
+  background-color: transparent !important;
+}
+
+.fc-daygrid-day.volny {
+  background-color: #e5fbe5 !important; /* světle zelená */
+  color: #145214; /* tmavší zelený text */
+}
