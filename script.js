@@ -43,26 +43,39 @@ document.addEventListener("DOMContentLoaded", function () {
     const calendar = new FullCalendar.Calendar(calendarEl, {
       initialView: "dayGridMonth",
       selectable: true,
-      unselectAuto: false, // neodznačí automaticky
+      unselectAuto: false,
+  
+      // Tohle funguje na PC (výběr rozsahu nebo kliknutí myší)
       selectAllow: function (info) {
         const day = new Date(info.startStr).getDay();
-        return day === 0 || day === 6; // sobota a neděle
+        return day === 0 || day === 6;
       },
       select: function (info) {
-        console.log("📅 Vybraný termín:", info.startStr);
+        zobrazFormular(info.startStr);
+      },
   
-        const formSection = document.getElementById("reservation-form-section");
-        const dateSpan = document.getElementById("selected-date");
-  
-        if (formSection && dateSpan) {
-          formSection.classList.remove("hidden");
-          dateSpan.textContent = info.startStr;
-          // Přejdi k formuláři (scroll)
-          formSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      // Tohle přidáme pro mobily – kliknutí na konkrétní den
+      dateClick: function (info) {
+        const day = new Date(info.dateStr).getDay();
+        if (day === 0 || day === 6) {
+          zobrazFormular(info.dateStr);
         }
       }
     });
   
     calendar.render();
+  
+    // Funkce pro zobrazení formuláře
+    function zobrazFormular(datum) {
+      const formSection = document.getElementById("reservation-form-section");
+      const dateSpan = document.getElementById("selected-date");
+  
+      if (formSection && dateSpan) {
+        formSection.classList.remove("hidden");
+        dateSpan.textContent = datum;
+        formSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
   });
+  
   
