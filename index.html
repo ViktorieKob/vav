@@ -19,6 +19,9 @@
 
     <script defer src="key-hunt.js"></script>
 
+    <script defer src="review.js"></script>
+
+
     <!-- kalendíř cz-->
 
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/locales-all.min.js"></script>
@@ -205,6 +208,34 @@
     
   <!-- SEKCE: test konec klič-->
 
+  <!-- SEKCE:recenze-->
+<!-- SEKCE: Recenze -->
+<section id="recenze-section" class="recenze-wrapper">
+  <h2 class="recenze-title">🗨️ Napište nám svou recenzi</h2>
+
+  <form id="recenze-form">
+    <input type="text" id="jmeno" placeholder="Jméno dítěte nebo rodiče" required />
+    <input type="date" id="datum" required />
+    <input type="text" id="tema" placeholder="Téma výletu" required />
+    <textarea id="zpetna-vazba" placeholder="Zpětná vazba..." required></textarea>
+    <button type="submit">Odeslat recenzi</button>
+  </form>
+
+  <div id="admin-panel" class="hidden">
+    <label for="admin-code">Zadejte kód pro správu recenzí:</label>
+    <input type="password" id="admin-code" placeholder="Zadejte kód..." />
+    <button onclick="overKod()">Potvrdit</button>
+  </div>
+
+  <div id="recenze-vypis"></div>
+</section>
+
+
+
+
+  
+  
+    <!-- SEKCE:recenze konec -->
 
   
   </main>

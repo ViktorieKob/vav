@@ -674,3 +674,77 @@ background: linear-gradient(to right, #fad9fd, #ffb6ff); /* pastel žlutá */
   transform: scale(1.2);
 }
 
+/* recenze*/
+/* SEKCE: Recenze */
+.recenze-wrapper {
+  text-align: center;
+  padding: 2rem;
+  background: #fff0fb;
+  border-radius: 12px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.recenze-title {
+  font-size: 1.8rem;
+  color: #3c003c;
+  margin-bottom: 20px;
+}
+
+#recenze-form input,
+#recenze-form textarea {
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #f0f5ff;
+}
+
+#recenze-form button {
+  background: #b347b3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#recenze-vypis {
+  margin-top: 30px;
+}
+
+.recenzni-bublina {
+  background: #ffe9fa;
+  padding: 15px;
+  border-radius: 12px;
+  margin: 15px auto;
+  text-align: left;
+  max-width: 600px;
+  position: relative;
+}
+
+.recenzni-bublina strong {
+  color: #3c003c;
+}
+
+.smazat-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #e81d62;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
