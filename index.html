@@ -16,6 +16,9 @@
 
     <!-- Tvůj vlastní JS -->
     <script defer src="script.js"></script>
+
+    <script defer src="key-hunt.js"></script>
+
     <!-- kalendíř cz-->
 
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/locales-all.min.js"></script>
@@ -100,7 +103,7 @@
         <strong>dobrodružný příběh</strong> plný záhad a kouzel. Princezna beze stopy zmizela – 
         a jedinou stopou je jméno, které šeptají stromy: <strong>Stohánek</strong>. Děti se vydávají na výpravu, 
         při které budou <strong>luštit šifry</strong>, <strong>plnit úkoly</strong>, <strong>hledat indicie</strong> a využívat sílu 
-        <strong>kouzelných přívěsků</strong>, které každá z nich nese.
+        <strong>kouzelných přívěsků</strong>, které každá z nich nese.        
         </p>
         <p>
         Jde o <strong>společnou cestu</strong> plnou spolupráce, paměti, odvahy a důvtipu. Lesy skrývají tajemství, 
@@ -149,6 +152,7 @@
         <p>
           Brzy zde najdete fotografie, videa a ukázky šifer, které si děti řeší během akcí. Připravujeme také interaktivní minihry a zvukové ukázky.
         </p>
+
         <a href="galerie.html" class="button-link">Přejít do galerie</a>
       </div>
     </div>
@@ -185,7 +189,23 @@
       <button type="submit">Odeslat žádost</button>
     </form>
   </section>
-  
+    <!-- SEKCE: test klič-->
+
+    <section class="section bubble bubble-key" id="tajny-klic">
+      <p class="key-message">
+        V tomto příběhu možná někdo zanechal
+        <span data-key="tajny123" class="key-emoji" title="Hledat klíč!">🔑</span> za sebou...
+      </p>
+    </section>
+    
+    <section id="tajna-sekce" class="section bubble bubble-key hidden">
+      <h2>✨ Tajná zpráva pro hledače klíče</h2>
+      <p>Našla jsi skrytý klíč. Teď můžeš odhalit další dobrodružství!</p>
+    </section>
+    
+  <!-- SEKCE: test konec klič-->
+
+
   
   </main>
   <section class="section kontakt" id="kontakt">

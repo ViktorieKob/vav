@@ -643,3 +643,34 @@ background: linear-gradient(to right, #fad9fd, #ffb6ff); /* pastel žlutá */
   background-color: #e5fbe5 !important; /* světle zelená */
   color: #145214; /* tmavší zelený text */
 }
+
+
+/* klíč*/
+
+.hidden {
+  display: none;
+}
+.bubble-key {
+  background: linear-gradient(to right, #fef6ff, #f6f0fd);
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 600px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  color: #333;
+}
+
+.key-message {
+  font-size: 1.2rem;
+}
+
+.key-emoji {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.key-emoji:hover {
+  transform: scale(1.2);
+}
+
