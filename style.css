@@ -676,75 +676,78 @@ background: linear-gradient(to right, #fad9fd, #ffb6ff); /* pastel žlutá */
 
 /* recenze*/
 /* SEKCE: Recenze */
-.recenze-wrapper {
-  text-align: center;
-  padding: 2rem;
-  background: #fff0fb;
-  border-radius: 12px;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.recenze-title {
-  font-size: 1.8rem;
-  color: #3c003c;
-  margin-bottom: 20px;
-}
-
-#recenze-form input,
-#recenze-form textarea {
-  display: block;
-  width: 100%;
-  margin: 10px auto;
-  padding: 10px;
-  font-size: 1rem;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  background: #f0f5ff;
-}
-
-#recenze-form button {
-  background: #b347b3;
-  color: white;
-  padding: 10px 20px;
+#recenze-formular iframe {
   border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  margin-top: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
-#recenze-vypis {
-  margin-top: 30px;
+.recenze-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
-.recenzni-bublina {
-  background: #ffe9fa;
-  padding: 15px;
-  border-radius: 12px;
-  margin: 15px auto;
-  text-align: left;
-  max-width: 600px;
+.recenze-bublina {
+  background: linear-gradient(to right, #ccffff, #e6f7ff);
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   position: relative;
 }
 
-.recenzni-bublina strong {
-  color: #3c003c;
+.recenze-bublina h3 {
+  margin: 0 0 0.5rem 0;
+  color: #2f0433;
+  font-size: 1.3rem;
 }
 
-.smazat-btn {
+.recenze-bublina .datum {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.recenze-bublina .text {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.btn-smaz {
   position: absolute;
   top: 10px;
-  right: 10px;
-  background: #e81d62;
+  right: 15px;
+  background: #ff4d4d;
   color: white;
   border: none;
-  padding: 5px 10px;
-  border-radius: 6px;
-  font-size: 0.9rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
   cursor: pointer;
 }
 
 .hidden {
   display: none;
+}
+/* test*/
+
+#reviews-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.review-card {
+  background: #ffeaff;
+  border-left: 5px solid #aa44cc;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.centered-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #300033;
+  margin-top: 2rem;
 }
