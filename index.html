@@ -215,7 +215,10 @@
 
   <form id="recenze-form">
     <input type="text" id="jmeno" placeholder="Jméno dítěte nebo rodiče" required />
-    <input type="date" id="datum" required />
+   
+    <label for="review-date">Datum výletu:</label>
+    <input type="date" id="review-date" name="date" required>
+
     <input type="text" id="tema" placeholder="Téma výletu" required />
     <textarea id="zpetna-vazba" placeholder="Zpětná vazba..." required></textarea>
     <button type="submit">Odeslat recenzi</button>
